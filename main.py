@@ -30,7 +30,10 @@ def encrypt(message, key):
 def decrypt(message, key):
     return vigenere(message, key, -1)
 
-print(f'\nEncrypted text: {text}')
+text2 = input("ingresa el codigo " + f'(Encrypted text: {text})' + " para decifrar: ")
+#print(f'\nEncrypted text: {text}')
 print(f'Key: {custom_key}')
-decryption = decrypt(text, custom_key)
+decryption = decrypt(text2, custom_key)
 print(f'\nDecrypted text: {decryption}\n')
+
+
